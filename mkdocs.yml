@@ -67,7 +67,7 @@ theme:
   locale: zh_CN
   language: zh
 extra_javascript:
-  # load/javascripts/mermaid.min.js
+  - load/javascripts/mermaid.min.js
   - load/javascripts/mathjax.js
   - load/javascripts/polyfill.min.js?features=es6
   - load/javascripts/es5/tex-mml-chtml.js
