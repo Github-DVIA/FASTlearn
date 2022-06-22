@@ -173,7 +173,7 @@ hide:
     **Dzongkha**: (NEEDED)
 141.  **Nepali**: ﻿म काँच खान सक्छू र मलाई केहि नी हुन्‍न् ।
 142.  **Tibetan**: ཤེལ་སྒོ་ཟ་ནས་ང་ན་གི་མ་རེད།
-143.  **Chinese**: 我能吞下玻璃而不伤身体。
+143.  **Chinese**: **我能吞下玻璃而不伤身体。**
 144.  **Chinese** (Traditional): 我能吞下玻璃而不傷身體。
 145.  **Taiwanese**: Góa ē-tàng chia̍h po-lê, mā bē tio̍h-siong.
 146.  **Japanese**: 私はガラスを食べられます。それは私を傷つけません。
