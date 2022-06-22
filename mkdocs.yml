@@ -71,7 +71,7 @@ extra_javascript:
   - load/javascripts/mathjax.js
   - load/javascripts/polyfill.min.js?features=es6
   - load/javascripts/es5/tex-mml-chtml.js
-  - load/javascripts/es5/tex-chtml-full.js
+  # load/javascripts/es5/tex-chtml-full.js
   # load/javascripts/es5/tex-svg-full.js
   # load/javascripts/es5/tex-mml-svg.js
 extra_css:
@@ -110,6 +110,7 @@ nav:
             - art/phy/2.3/2.3.md
             - art/phy/2.3/2.3.1.md
             - art/phy/2.3/2.3.2.md
+            - art/phy/2.3/2.3.3.md
       - 必修三:
           - "静电场的描述": 
             - art/phy/3.1/3.1.1.md
