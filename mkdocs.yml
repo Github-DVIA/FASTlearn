@@ -145,8 +145,8 @@ nav:
           - art/pol/4.3.md
   - 帮助: 
       - art/help/guide.md
+  - 关于: art/about.md
 repo_url: https://github.com/Github-DVIA/FASTlearn
 repo_name: Github-DVIA/FASTlearn
 site_author: DVIA
-copyright: 欢迎转载，欢迎提交。难免有误，开题探究。
 edit_uri: ""
