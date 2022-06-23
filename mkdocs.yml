@@ -68,13 +68,18 @@ theme:
   language: zh
 extra_javascript:
   - load/javascripts/mermaid.min.js
-  - load/javascripts/mathjax.js
-  - load/javascripts/polyfill.min.js?features=es6
-  - load/javascripts/es5/tex-mml-chtml.js
+  - load/javascripts/katex/onload.js
+  - load/javascripts/katex/contrib/auto-render.min.js
+  - load/javascripts/katex/katex.min.js
+  - load/javascripts/katex/contrib/mhchem.min.js
+  # load/javascripts/mathjax.js
+  # load/javascripts/polyfill.min.js?features=es6
+  # load/javascripts/es5/tex-mml-chtml.js
   # load/javascripts/es5/tex-chtml-full.js
   # load/javascripts/es5/tex-svg-full.js
   # load/javascripts/es5/tex-mml-svg.js
 extra_css:
+  - load/javascripts/katex/katex.min.css
   - load/fonts/stylesheet.css
 nav:
   - 设计哲学: art/about.md
