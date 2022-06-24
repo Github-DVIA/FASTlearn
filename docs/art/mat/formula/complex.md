@@ -48,6 +48,24 @@ $z_1 (z_2 + z_3)=z_1 z_2+z_1 z_3$
 
 $(a+bi)÷(c+bi)=\frac {ac+bd} {c^2+d^2}+\frac {bc-ad} {c^2+d^2}$
 
+$\frac{z_1}{z_2}=\frac{z_1\cdotp\overline{z_2}}{|z_2|^2}$
+
+$|\frac{z_1}{z_2}|=\frac{|z_1|}{|z_2|}$
+
+### 常见运算
+
+$\frac{1+i}{1-i}=i$
+
+$\frac{1-i}{1+i}=-i$
+
+$(a+bi)i=-b+ai$
+
+$\frac{-b+ai}{a+bi}=i$
+
+$(a-bi)i=b+ai$
+
+$\frac{b+ai}{a-bi}=i$
+
 ## 复数的三角表示
 
 任何一个复数 $z=a+bi$ 都可以表示成：`r(cost+isint)`
