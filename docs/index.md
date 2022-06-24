@@ -6,4 +6,4 @@ hide:
 
 # 欢迎
 
-![](./load/logo/op.gif)
+![Welcome to FASTlearn](./load/logo/op.gif)
