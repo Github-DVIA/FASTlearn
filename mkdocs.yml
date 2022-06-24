@@ -35,6 +35,7 @@ markdown_extensions:
   # extra
   - tables
   - smarty
+  - meta
 theme:
   features:
     - search.suggest
@@ -51,15 +52,15 @@ theme:
   palette:
     - scheme: default
       primary: indigo
-      accent: indigo
+      accent: yellow
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb
         name: 切换到暗黑模式
     - scheme: slate
       primary: indigo
-      accent: indigo
+      accent: red
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/lightbulb-outline
         name: 切换到明亮模式
   name: material
   logo: load/logo/LOGO.png
