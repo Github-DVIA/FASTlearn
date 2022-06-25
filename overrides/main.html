@@ -2,40 +2,58 @@
 
 {% block content %}
 {{ super() }}
-
-<!-- Giscus -->
+{% set cusdis = config.extra.cusdis %}
+{% if page and page.meta and page.meta.cusdis is string %}
+{% set cusdis = page.meta.cusdis %}
+{% endif %}
+{% if not page.is_homepage %}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
-<div id="cusdis_thread" data-host="https://cus-fastlearn.xf-yun.cn"
-    data-app-id="23b1a81c-8dc3-4240-bf28-97bb978454e1" data-page-id="{{ PAGE_ID }}" data-page-url="{{ PAGE_URL }}"
-    data-page-title="{{ PAGE_TITLE }}"></div>
-<script defer src="https://cus-fastlearn.xf-yun.cn/js/widget/lang/zh-cn.js"></script>
-<script async defer src="https://cus-fastlearn.xf-yun.cn/js/cusdis.es.js"></script>
-
-<!-- Reload on palette change -->
-<script>
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object")
-        if (palette.color.scheme === "slate") {
-            var giscus = document.querySelector("script[src*=giscus]")
-            giscus.setAttribute("data-theme", "dark")
-        }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function () {
-        var ref = document.querySelector("[data-md-component=palette]")
-        ref.addEventListener("change", function () {
-            var palette = __md_get("__palette")
-            if (palette && typeof palette.color === "object") {
-                var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-                /* Instruct Giscus to change theme */
-                var frame = document.querySelector(".giscus-frame")
-                frame.contentWindow.postMessage(
-                    { giscus: { setConfig: { theme } } },
-                    ""
-                )
+<div class="cusdis" style="width:100%">
+    <div id="cusdis_thread" data-host="{{ config.extra.cusdis.host }}" data-app-id="{{ config.extra.cusdis.app_id }}"
+        data-page-id="{{ page.abs_url|url }}""
+          data-page-url=" {{ page.abs_url|url }}" data-page-title="{{ page.title }}">
+    </div>
+</div>
+<script type="text/javascript">
+    const src = '{{ config.extra.cusdis.host }}/js/widget/lang/{{ config.extra.cusdis.lang }}.js';
+    var createScript = function (url, onload) {
+        var s = document.createElement('script');
+        s.setAttribute('src', url);
+        s.setAttribute('type', 'text/javascript');
+        s.setAttribute('charset', 'UTF-8');
+        s.async = false;
+        if (typeof onload === 'function') {
+            if (window.attachEvent) {
+                s.onreadystatechange = function () {
+                    var e = s.readyState;
+                    if (e === 'loaded' || e === 'complete') {
+                        s.onreadystatechange = null;
+                        onload();
+                    }
+                };
+            } else {
+                s.onload = onload;
             }
-        })
-    })
+        }
+        var e = document.getElementsByTagName('script')[0] ||
+            document.getElementsByTagName('head')[0] ||
+            document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e);
+    }
+    createScript(src);
+    var schema = document.documentElement.getAttribute('data-user-color-scheme');
+    if (schema) {
+        document.querySelector('#cusdis_thread').dataset.theme = schema
+    }
 </script>
+<script type="text/javascript">
+    var loadComments = function (selectors, loadFunc) {
+        loadFunc();
+    }
+    loadComments('#cusdis_thread', function () {
+        createScript("https://cusdis.com/js/cusdis.es.js");
+    });
+</script>
+<noscript>Please enable JavaScript to view the comments</noscript>
+{% endif %}
 {% endblock %}
