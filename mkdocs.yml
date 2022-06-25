@@ -68,6 +68,12 @@ theme:
   favicon: load/logo/LOGO.png
   locale: zh_CN
   language: zh
+extra:
+  disqus:
+  cusdis:
+    host: https://cus-fastlearn.xf-yun.cn
+    app_id: 23b1a81c-8dc3-4240-bf28-97bb978454e1
+    lang: zh-cn
 extra_javascript:
   - load/javascripts/mermaid.min.js
   - load/javascripts/katex/onload.js
