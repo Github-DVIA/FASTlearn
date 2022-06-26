@@ -224,13 +224,28 @@ $\cos\frac12\alpha=\sqrt{\frac{1+\cos\alpha}2}$
 
 $\tan\alpha=\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}$
 
-### 两角积
+### 积化和差
 
-$\sin^2\alpha=\sin\alpha\sin\beta=-\frac{1}2[\cos(\alpha+\beta)-\cos(\alpha-\beta)]$
+$\sin\alpha\sin\beta=-\frac{1}2[\cos(\alpha+\beta)-\cos(\alpha-\beta)]$
 
-$\cos^2\alpha=\cos\alpha\cos\beta=-\frac{1}2[\cos(\alpha+\beta)+\cos(\alpha-\beta)]$
+$\cos\alpha\cos\beta=-\frac{1}2[\cos(\alpha+\beta)+\cos(\alpha-\beta)]$
 
 $\sin\alpha\cos\beta=\frac{1}2[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$
+
+### 和差化积
+
+#### 正弦函数
+
+$\sin\alpha+\sin\beta=2\sin\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2$
+
+$\sin\alpha-\sin\beta=2\cos\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2$
+
+#### 余弦函数
+
+$\cos\alpha+\cos\beta=2\cos\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2$
+
+
+$\cos\alpha-\cos\beta=-2\sin\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2$
 
 ## $y=A\sin(\omega{x}+\phi)$
 
