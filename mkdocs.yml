@@ -1,5 +1,6 @@
 site_name: FASTlearn
 plugins:
+  - mermaid2
   - git-revision-date
   - tags:
       tags_file: art/tags.md
@@ -13,7 +14,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid
   - footnotes
   - md_in_html
   - attr_list
@@ -43,26 +44,26 @@ theme:
     - search.highlight
     - navigation.tracking
     - navigation.instant
-    #  navigation.top
+    -  navigation.top
     - navigation.expand
     - navigation.sections
     # toc.integrate
     - navigation.tabs
     # navigation.tabs.sticky
   font: false
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: yellow
-      toggle:
-        icon: material/lightbulb
-        name: 切换到暗黑模式
-    - scheme: slate
-      primary: indigo
-      accent: red
-      toggle:
-        icon: material/lightbulb-outline
-        name: 切换到明亮模式
+#  palette:
+#    - media: "(prefers-color-scheme: light)"
+#      scheme: default
+#      primary: indigo
+#      accent: deep orange
+#      toggle:
+#        icon: material/lightbulb
+#    - media: "(prefers-color-scheme: dark)"
+#      scheme: slate
+#      primary: indigo
+#      accent: red
+#       toggle:
+#        icon: material/lightbulb-outline
   name: material
   logo: load/logo/op.gif
   favicon: load/logo/op.gif
@@ -75,6 +76,7 @@ extra:
     app_id: 23b1a81c-8dc3-4240-bf28-97bb978454e1
     lang: zh-cn
 extra_javascript:
+  # load/javascripts/mermaid-lad.js
   - load/javascripts/mermaid.min.js
   - load/javascripts/katex/onload.js
   - load/javascripts/katex/contrib/auto-render.min.js
