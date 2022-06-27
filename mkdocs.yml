@@ -43,7 +43,7 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.tracking
-    - navigation.instant
+    # navigation.instant
     -  navigation.top
     - navigation.expand
     - navigation.sections
