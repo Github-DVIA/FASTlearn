@@ -64,8 +64,8 @@ theme:
         icon: material/lightbulb-outline
         name: 切换到明亮模式
   name: material
-  logo: load/logo/LOGO.png
-  favicon: load/logo/LOGO.png
+  logo: load/logo/op.gif
+  favicon: load/logo/op.gif
   locale: zh_CN
   language: zh
 extra:
