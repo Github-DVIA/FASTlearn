@@ -152,7 +152,7 @@ $\tan(-x)=-\tan{x}, x\in\mathbf{R}, x≠\frac\pi{2}+k\pi, k\in\mathbf{Z}$
 
 ## 三角恒等变换
 
-### 两角和
+### 同名两角和
 
 #### 正弦函数
 
@@ -172,7 +172,7 @@ $\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}$
 
 $(T_{(\alpha+\beta)})$
 
-### 两角差
+### 同名两角差
 
 #### 正弦函数
 
@@ -192,7 +192,7 @@ $\tan(\alpha-\beta)=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$
 
 $(T_{(\alpha-\beta)})$
 
-### 倍角
+### 同名倍角
 
 #### 正弦函数
 
@@ -210,7 +210,7 @@ $\cos2\alpha=2\cos^2\alpha-1$
 
 $\tan2\alpha=\frac{2\tan\alpha}{1-\tan^2\alpha}$
 
-### 半角
+### 同名半角
 
 #### 正弦函数
 
@@ -222,13 +222,19 @@ $\cos\frac12\alpha=\sqrt{\frac{1+\cos\alpha}2}$
 
 #### 正切函数
 
-$\tan\alpha=\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}$
+$\tan\frac12\alpha=\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}$
 
 ### 积化和差
 
+#### 正弦函数
+
 $\sin\alpha\sin\beta=-\frac{1}2[\cos(\alpha+\beta)-\cos(\alpha-\beta)]$
 
+#### 余弦函数
+
 $\cos\alpha\cos\beta=-\frac{1}2[\cos(\alpha+\beta)+\cos(\alpha-\beta)]$
+
+#### 正余弦混合
 
 $\sin\alpha\cos\beta=\frac{1}2[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$
 
@@ -236,14 +242,15 @@ $\sin\alpha\cos\beta=\frac{1}2[\sin(\alpha+\beta)+\sin(\alpha-\beta)]$
 
 #### 正弦函数
 
-$\sin\alpha+\sin\beta=2\sin\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2$
+$\sin\alpha+\sin\beta=2\sin\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2$[^howsin]
+
+[^howsin]: $\sin\alpha=\sin(\frac{\alpha+\beta}2+\frac{\alpha-\beta}2)=\sin\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2+\sin\frac{\alpha-\beta}2\cos\frac{\alpha+\beta}2$
 
 $\sin\alpha-\sin\beta=2\cos\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2$
 
 #### 余弦函数
 
 $\cos\alpha+\cos\beta=2\cos\frac{\alpha+\beta}2\cos\frac{\alpha-\beta}2$
-
 
 $\cos\alpha-\cos\beta=-2\sin\frac{\alpha+\beta}2\sin\frac{\alpha-\beta}2$
 
