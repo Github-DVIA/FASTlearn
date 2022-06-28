@@ -42,14 +42,14 @@ theme:
   features:
     - search.suggest
     - search.highlight
-    - navigation.tracking
+    # navigation.tracking
     # navigation.instant
-    -  navigation.top
+    # navigation.top
     - navigation.expand
     - navigation.sections
     # toc.integrate
     - navigation.tabs
-    # navigation.tabs.sticky
+    - navigation.tabs.sticky
   font: false
 #  palette:
 #    - media: "(prefers-color-scheme: light)"
@@ -66,7 +66,7 @@ theme:
 #        icon: material/lightbulb-outline
   name: material
   logo: load/logo/op.gif
-  favicon: load/logo/op.gif
+  favicon: load/logo/LOGO.gif
   locale: zh_CN
   language: zh
 extra:
