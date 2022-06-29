@@ -154,7 +154,7 @@ $\sin(\alpha+\beta)=\sin\alpha\cos\beta+\sin\beta\cos\alpha$
 
 $(S_{(\alpha+\beta)})$
 
-#### 余弦函数
+#### 余弦函数 {#cosplus}
 
 $\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$
 
@@ -222,7 +222,9 @@ $\tan\frac12\alpha=\sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}$
 
 #### 正弦函数
 
-$\sin\alpha\sin\beta=-\frac{1}2[\cos(\alpha+\beta)-\cos(\alpha-\beta)]$
+$\sin\alpha\sin\beta=-\frac{1}2[\cos(\alpha+\beta)-\cos(\alpha-\beta)]$[^howtosin]
+
+[^howtosin]: $\cos(\alpha+\beta)-\cos(\alpha-\beta)$，参见[同名余弦函数两角和](#cosplus)
 
 #### 余弦函数
 
