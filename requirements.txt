@@ -11,3 +11,4 @@ mkdocs-material-extensions>=1.0.3
 pygments>=2.12
 pymdown-extensions>=9.4
 mkdocs-blogging-plugin>=2.1
+git-revision-date-localized>=1.0.0
