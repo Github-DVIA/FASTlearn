@@ -2,14 +2,17 @@
 hide:
   - navigation
   - toc
+  - footer
 ---
 
 # 欢迎
 
-![1](./art/images/former2.jpg){ align=left }
+<img src="./art/images/former2.jpg" align=left width="58%">
 
-![5](./art/images/romanita1-1024x647.jpg){ align=right }
+<img src="./art/images/romanita1-1024x647.jpg" align=right width="39%">
 
-![2](./art/images/former3-1024x706.jpg){ align=left }
+<img src="./art/images/former5-1024x825.jpg" align=right width="39%">
 
-![3](./art/images/former5-1024x825.jpg){ align=right }
+<img src="./art/images/former3-1024x706.jpg" align=left width="58%">
+
+<img src="./art/images/201709010948332300.jpg" align=right width="39%">
