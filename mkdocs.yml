@@ -77,7 +77,7 @@ extra:
     lang: zh-cn
 extra_javascript:
   # load/javascripts/mermaid/mermaid-lad.js
-  - load/javascripts/mermaid/mermaid.min.js
+  - load/javascripts/mermaid/mermaid.js
   - load/javascripts/katex/onload.js
   - load/javascripts/katex/contrib/auto-render.min.js
   - load/javascripts/katex/katex.min.js
