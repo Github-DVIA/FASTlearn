@@ -107,6 +107,7 @@ nav:
           - art/mat/formula/complex.md
           - art/mat/formula/vector.md
           - art/mat/formula/space.md
+          - art/mat/formula/probability.md
   - 物理:
       - 必修二:
           - "抛体运动":
