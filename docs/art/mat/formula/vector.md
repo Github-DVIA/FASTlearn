@@ -121,8 +121,6 @@ $S=\frac{1}2ah_a=\frac{1}2bh_b=\frac{1}2ch_c$
 
 $S=\frac{1}2ab\sin{C}=\frac{1}2bc\sin{A}=\frac{1}2ca\sin{B}$
 
-<div>
 <video controls>
       <source id="mp4" src="https://d1.xf-yun.cn/file/3hyhhyhhyh/%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E6%96%B9%E6%B3%95%E5%BF%AB%E9%80%9F%E6%A2%B3%E7%90%86/%5BP4%5D2022%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6%21%E3%80%90%E4%B8%8D%E7%AD%89%E5%BC%8F%2B%E5%90%91%E9%87%8F%2B%E6%95%B0%E5%88%97%E3%80%91%E6%A0%B8%E5%BF%83%E6%A2%B3%E7%90%86.%E5%B0%8F%E5%A7%9A%E8%80%81%E5%B8%88.%E6%9C%80%E5%90%8E6%E8%AF%BE%E7%AC%AC4%E8%AF%BE.mp4?Authorization=3_20220703012515_f95a012b55c5b92a18e4bde2_542c8b6deeae76cd8e4ca5fb69da5c1613d2e3ae_004_20220710012515_0000_dnld" type="video/mp4">
-</videos>
-</div>
+</video>

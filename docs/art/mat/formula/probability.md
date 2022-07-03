@@ -1,7 +1,5 @@
 # 概率
 
-<div>
 <video controls>
       <source id="mp4" src="https://d1.xf-yun.cn/file/3hyhhyhhyh/%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E6%96%B9%E6%B3%95%E5%BF%AB%E9%80%9F%E6%A2%B3%E7%90%86/%5BP5%5D2022%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6%21%E3%80%90%E7%BB%84%E5%90%88%2B%E6%A6%82%E7%8E%87%2B%E7%BB%9F%E8%AE%A1%E3%80%91%E9%87%8D%E7%82%B9%E5%85%A8%E5%A4%8D%E4%B9%A0%EF%BC%81.mp4?Authorization=3_20220703021329_9bf9e0f1f17232c161fc8d73_89c95b25a494c4157fdd1503d1c8f55c7eccd7ad_004_20220710021329_0000_dnld" type="video/mp4">
-</videos>
-</div>
+</video>
