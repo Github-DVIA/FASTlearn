@@ -55,16 +55,15 @@ theme:
     # toc.integrate
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.indexes
   font: false
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: white
       accent: amber
       toggle:
         icon: material/lightbulb
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: black
       accent: red
       toggle:
