@@ -7,10 +7,26 @@ hide:
 
 # 欢迎
 
-<img src="./art/images/former2.jpg" align=left width="58%">
+<style>
+div {
+  vertical-align: top;
+  display: inline-block;
+}
+.img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+</style>
 
-<img src="./art/images/romanita1-1024x647.jpg" align=right width="39%">
+<div float=left style="width:59%">
+    <img src="./art/images/former2.jpg">
+    <img src="./art/images/romanita1-1024x647.jpg">
+</div>
 
-<img src="./art/images/former5-1024x825.jpg" align=right width="39%">
-
-<img src="./art/images/former3-1024x706.jpg" align=left width="58%">
+<div float=left style="width:39%">
+    <img src="./art/images/former5-1024x825.jpg">
+    <img src="./art/images/former3-1024x706.jpg">
+    <img src="./art/images/banner.jpg"> 
+</div>
