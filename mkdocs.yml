@@ -94,12 +94,6 @@ extra_css:
 nav:
   - 设计哲学: art/about.md
   - 标签: art/tags.md
-  - 英语:
-      - "文章":
-          - "art/eng/articles/Secretary Blinken outlines the Administration’s policy toward the People’s Republic of China.md"
-          - art/eng/articles/moon50.md
-      - "新闻":
-          - art/eng/archive-news/PSSMDAOGBGIHI.md
   - 数学:
       - 速查: 
           - art/mat/formula/inequality.md
@@ -109,6 +103,12 @@ nav:
           - art/mat/formula/vector.md
           - art/mat/formula/space.md
           - art/mat/formula/probability.md
+  - 英语:
+      - "文章":
+          - "art/eng/articles/Secretary Blinken outlines the Administration’s policy toward the People’s Republic of China.md"
+          - art/eng/articles/moon50.md
+      - "新闻":
+          - art/eng/archive-news/PSSMDAOGBGIHI.md
   - 物理:
       - 必修二:
           - "抛体运动":
