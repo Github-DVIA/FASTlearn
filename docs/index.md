@@ -33,5 +33,5 @@ hide:
 <div float=left style="width:39%" class=right>
     <img src="./art/images/former5-1024x825.jpg">
     <img src="./art/images/former3-1024x706.jpg">
-    <img src="./art/images/banner.jpg"> 
+    <img src="./art/images/banner.jpg">
 </div>
