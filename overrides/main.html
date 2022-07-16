@@ -9,6 +9,11 @@
 {% if not page.is_homepage %}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
 <div class="cusdis" style="width:100%">
+    <style>
+        .cusdis .cusdis_thread {
+            font-family: "Noto Serif","Ubuntu", "Noto Serif SC", Arial;
+        }
+    </style>
     <div id="cusdis_thread" data-host="{{ config.extra.cusdis.host }}" data-app-id="{{ config.extra.cusdis.app_id }}"
         data-page-id="{{ page.title }}" data-page-url="{{ page.title }}" data-page-title="{{ page.title }}"
         >
