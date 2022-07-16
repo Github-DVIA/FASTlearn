@@ -237,6 +237,10 @@
   --md-code-font: "Ubuntu Mono", monospace; 
 }
 
+.cusdis {
+    font-family: "Noto Serif","Ubuntu", "Noto Serif SC", Arial;
+}
+
 .md-ellipsis {
     font-family: "Ubuntu", Arial;
 }
