@@ -237,7 +237,7 @@
   --md-code-font: "Ubuntu Mono", monospace; 
 }
 
-.cusdis {
+.cusdis .cusdis_thread {
     font-family: "Noto Serif","Ubuntu", "Noto Serif SC", Arial;
 }
 
