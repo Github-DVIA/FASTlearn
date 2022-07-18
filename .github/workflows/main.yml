@@ -19,6 +19,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CUSTOM_DOMAIN: gitfastlearn.xf-yun.cn
           CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base
+          # EXTRA_PACKAGES: build-base
           # GITHUB_DOMAIN: github.myenterprise.com
           REQUIREMENTS: requirements.txt
