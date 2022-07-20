@@ -28,22 +28,3 @@ jobs:
           folder: site
           branch: gh-zh
           force: true
-      - name: Checkout to gh-zh
-        uses: actions/checkout@v3
-        with:
-          ref: "gh-zh"
-      - name: Create Github Actions fs
-        run: mkdir .github && cd .github && mkdir workflows
-      - name: Get Github Actions file
-        working-directory: ./.github/workflows/
-        run: curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
-      - name: Commit changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          git commit -m "Add Github Actions file" -a
-      - name: re-Deploy to gh-zh
-        uses: ad-m/github-push-action@master
-        with:
-          force_with_lease: true

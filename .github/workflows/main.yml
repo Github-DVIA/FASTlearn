@@ -2,12 +2,13 @@ name: 2IN1
 on:
   push:
     branches:
-      - "gh-zh"
-      - "gh-en"
+      - "dev-zh"
+      - "dev-en"
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - run: sleep 5m
       - uses: actions/checkout@v3
         with:
           ref: "gh-page"
