@@ -2,8 +2,8 @@ name: 2IN1
 on:
   push:
     branches:
-      - "dev-zh"
-      - "dev-en"
+      - "gh-zh"
+      - "gh-en"
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -20,6 +20,6 @@ jobs:
           lfs: "./en"
       - uses: dfm/force-push-branch-action@v1
         with:
-          target-branch: "pages"
+          target-branch: "gh-page"
           commit-message: "use dfm/force-push-branch-action@v1"
           path: .
