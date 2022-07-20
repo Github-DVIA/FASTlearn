@@ -16,7 +16,7 @@ jobs:
           python-version: 3.7
       - run: pip install -r requirements.txt
       - run: mkdocs build
-      - run: mkdir .github && cd .github && mkdir workflow && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml"
+      - run: mkdir .github && cd .github && mkdir workflows && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml"
       - uses: dfm/force-push-branch-action@v1
         with:
           target-branch: "gh-zh"
