@@ -96,10 +96,10 @@ extra_css:
   - load/javascripts/katex/katex.min.css
   - load/fonts/stylesheet.css
 nav:
-  - 设计哲学: art/about.md
+  - 哲学: art/about.md
   - 标签: art/tags.md
   - 数学:
-      - 速查: 
+      - 速查:
           - art/mat/formula/inequality.md
           - art/mat/formula/log.md
           - art/mat/formula/trigonometric.md
@@ -116,71 +116,71 @@ nav:
   - 物理:
       - 必修二:
           - "抛体运动":
-            - art/phy/2.1/index.md
-            - art/phy/2.1/2.1.1.md
-            - art/phy/2.1/2.1.2.md
-            - art/phy/2.1/2.1.4.md
-            - art/phy/2.1/2.1.5.md
-            - art/phy/2.1/2.1.6.md
+              - art/phy/2.1/index.md
+              - art/phy/2.1/2.1.1.md
+              - art/phy/2.1/2.1.2.md
+              - art/phy/2.1/2.1.4.md
+              - art/phy/2.1/2.1.5.md
+              - art/phy/2.1/2.1.6.md
           - "圆周运动":
-            - art/phy/2.2/index.md
-            - art/phy/2.2/2.2.1.md
-            - art/phy/2.2/2.2.2.1.md
-            - art/phy/2.2/2.2.2.2.md
-            - art/phy/2.2/2.2.3.md
-            - art/phy/2.2/2.2.4.md
+              - art/phy/2.2/index.md
+              - art/phy/2.2/2.2.1.md
+              - art/phy/2.2/2.2.2.1.md
+              - art/phy/2.2/2.2.2.2.md
+              - art/phy/2.2/2.2.3.md
+              - art/phy/2.2/2.2.4.md
           - "万有引力定律":
-            - art/phy/2.3/index.md
-            - 开普勒定律: art/phy/2.3/2.3.1.md
-            - art/phy/2.3/2.3.2.md
-            - art/phy/2.3/2.3.3.md
-            - art/phy/2.3/2.3.4.md
+              - art/phy/2.3/index.md
+              - 开普勒定律: art/phy/2.3/2.3.1.md
+              - art/phy/2.3/2.3.2.md
+              - art/phy/2.3/2.3.3.md
+              - art/phy/2.3/2.3.4.md
           - "机械能及其守恒定律":
-            - art/phy/2.4/index.md
-            - art/phy/2.4/2.4.1.md
-            - art/phy/2.4/2.4.2.md
-            - art/phy/2.4/2.4.3.md
-            - art/phy/2.4/2.4.4.md
-            - art/phy/2.4/2.4.5.md
+              - art/phy/2.4/index.md
+              - art/phy/2.4/2.4.1.md
+              - art/phy/2.4/2.4.2.md
+              - art/phy/2.4/2.4.3.md
+              - art/phy/2.4/2.4.4.md
+              - art/phy/2.4/2.4.5.md
       - 必修三:
-          - "静电场的描述": 
-            - art/phy/3.1/index.md
-            - art/phy/3.1/3.1.1.md
-            - art/phy/3.1/3.1.2.md
-            - art/phy/3.1/3.1.3.md
-            - art/phy/3.1/3.1.4.md
-          - "静电场的应用": 
-            - art/phy/3.2/index.md
-            - art/phy/3.2/3.2.1.md
-            - art/phy/3.2/3.2.2.md
-            - art/phy/3.2/3.2.3.md
+          - "静电场的描述":
+              - art/phy/3.1/index.md
+              - art/phy/3.1/3.1.1.md
+              - art/phy/3.1/3.1.2.md
+              - art/phy/3.1/3.1.3.md
+              - art/phy/3.1/3.1.4.md
+          - "静电场的应用":
+              - art/phy/3.2/index.md
+              - art/phy/3.2/3.2.1.md
+              - art/phy/3.2/3.2.2.md
+              - art/phy/3.2/3.2.3.md
           - 恒定电流:
-            - art/phy/3.3/index.md
-            - art/phy/3.3/3.3.1.md
-            - art/phy/3.3/3.3.2.md
-            - art/phy/3.3/3.3.3.md
+              - art/phy/3.3/index.md
+              - art/phy/3.3/3.3.1.md
+              - art/phy/3.3/3.3.2.md
+              - art/phy/3.3/3.3.3.md
       - 选择性必修一:
           - "动量守恒定律":
-            - art/phy/4.1/index.md
-            - art/phy/4.1/4.1.1.md
-            - art/phy/4.1/4.1.2.md
+              - art/phy/4.1/index.md
+              - art/phy/4.1/4.1.1.md
+              - art/phy/4.1/4.1.2.md
   - 政治:
       - 必修三:
           - 中国共产党的领导:
-            - art/pol/3.1/3.1.md
-            - art/pol/3.1/3.1.1.md
-            - art/pol/3.1/3.1.2.md
-            - art/pol/3.1/3.1.3.md
+              - art/pol/3.1/3.1.md
+              - art/pol/3.1/3.1.1.md
+              - art/pol/3.1/3.1.2.md
+              - art/pol/3.1/3.1.3.md
       - 必修四:
           - 探索世界与把握规律:
-            - art/pol/4.1/4.1.md
-            - art/pol/4.1/4.1.1.md
-            - art/pol/4.1/4.1.3.md
-            - art/pol/4.1/4.1.4.md
-            - art/pol/4.1/4.1.5.md
-            - art/pol/4.1/4.1.6.md
-            - art/pol/4.1/4.1.7.md
-            - art/pol/4.1/4.1.8.md
+              - art/pol/4.1/4.1.md
+              - art/pol/4.1/4.1.1.md
+              - art/pol/4.1/4.1.3.md
+              - art/pol/4.1/4.1.4.md
+              - art/pol/4.1/4.1.5.md
+              - art/pol/4.1/4.1.6.md
+              - art/pol/4.1/4.1.7.md
+              - art/pol/4.1/4.1.8.md
 repo_url: https://github.com/Github-DVIA/FASTlearn
 repo_name: Edit on Github
 copyright: 本项目没有许可证
