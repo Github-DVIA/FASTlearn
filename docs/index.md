@@ -5,7 +5,7 @@ hide:
   - footer
 ---
 
-# 欢迎
+# Welcome
 
 <style>
 .left {
