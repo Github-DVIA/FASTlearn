@@ -1,0 +1,25 @@
+name: 2IN1
+on:
+  push:
+    branches:
+      - "dev-zh"
+      - "dev-en"
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: "dev-zh"
+          fetch-depth: "0"
+          lfs: "./zh"
+      - uses: actions/checkout@v3
+        with:
+          ref: "dev-em"
+          fetch-depth: "0"
+          lfs: "./en"
+      - uses: dfm/force-push-branch-action@v1
+        with:
+          target-branch: "pages"
+          commit-message: "use dfm/force-push-branch-action@v1"
+          path: .
