@@ -9,10 +9,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: 'dev-zh'
-          fetch-depth: '0'
+          ref: "dev-zh"
+          fetch-depth: "0"
       - uses: actions/setup-python@v2
         with:
           python-version: 3.7
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force -b gh-zh
+      - run: mkdocs build
+      - run: mkdir .github && cd .github && mkdir workflow && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml"
+      - uses: dfm/force-push-branch-action@v1
+        with:
+          target-branch: "gh-zh"
+          commit-message: "use dfm/force-push-branch-action@v1"
+          path: .site
