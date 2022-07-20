@@ -20,14 +20,18 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - footnotes
   - md_in_html
+  - abbr
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.smartsymbols
-  - pymdownx.snippets
   - pymdownx.details
   - pymdownx.caret
   - pymdownx.mark
@@ -150,6 +154,11 @@ nav:
             - art/phy/3.2/3.2.1.md
             - art/phy/3.2/3.2.2.md
             - art/phy/3.2/3.2.3.md
+          - 恒定电流:
+            - art/phy/3.3/index.md
+            - art/phy/3.3/3.3.1.md
+            - art/phy/3.3/3.3.2.md
+            - art/phy/3.3/3.3.3.md
       - 选择性必修一:
           - "动量守恒定律":
             - art/phy/4.1/index.md
