@@ -20,10 +20,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Build website
         run: mkdocs build
-      - name: main.yml
-        run: |
-          cd site && mkdir .github && cd .github && mkdir workflows
-          cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
+      - run: cd site && mkdir .github && cd .github && mkdir workflows
+      - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
