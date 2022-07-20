@@ -2,7 +2,7 @@ name: gh-en
 on:
   push:
     branches:
-      - master 
+      - dev-en
 jobs:
   deploy:
     runs-on: ubuntu-latest

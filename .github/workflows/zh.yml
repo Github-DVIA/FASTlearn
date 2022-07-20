@@ -2,7 +2,7 @@ name: gh-zh
 on:
   push:
     branches:
-      - master 
+      - dev-zh
 jobs:
   deploy:
     runs-on: ubuntu-latest
