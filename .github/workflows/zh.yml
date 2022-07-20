@@ -32,13 +32,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: "gh-zh"
-          fetch-depth: "0"
       - name: Create Github Actions fs
         run: mkdir .github && cd .github && mkdir workflows
       - name: Get Github Actions file
         working-directory: ./.github/workflows/
         run: curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
-      - name: Commit change
+      - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"

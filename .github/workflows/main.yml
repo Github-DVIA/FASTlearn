@@ -10,16 +10,23 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: "gh-zh"
-          fetch-depth: "0"
-          lfs: "./zh"
-      - uses: actions/checkout@v3
+          ref: "gh-page"
+          lfs: "./page"
+      - name: Delete old file
+        run: rm -rf zh && rm -rf en
+      - name: Clone gh-zh
+        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-zh --single-branch zh
+      - name: Clone gh-en
+        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-en --single-branch en
+      - name: Get index.html
+        run: curl -o index.html https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/src/index.html
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Add Github Actions file" -a
+      - name: re-Deploy to gh-page
+        uses: ad-m/github-push-action@master
         with:
-          ref: "gh-en"
-          fetch-depth: "0"
-          lfs: "./en"
-      - uses: dfm/force-push-branch-action@v1
-        with:
-          target-branch: "gh-page"
-          commit-message: "use dfm/force-push-branch-action@v1"
-          path: .
+          force_with_lease: true
