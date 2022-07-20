@@ -18,4 +18,4 @@ jobs:
       - run: mkdocs build
       - run: cd site && mkdir .github && cd .github && mkdir workflows
       - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
-      - run: cd site && git init && git remote git remote add origin https://github.com/Github-DVIA/FASTlearn.git && git commit -a "all" && git add -A && git push -f origin gh-zh
+      - run: cd site && git init && git remote add origin https://github.com/Github-DVIA/FASTlearn.git && git commit -a "all" && git add -A && git push -f origin gh-zh
