@@ -10,12 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: "dev-zh"
+          ref: "gh-zh"
           fetch-depth: "0"
           lfs: "./zh"
       - uses: actions/checkout@v3
         with:
-          ref: "dev-em"
+          ref: "gh-en"
           fetch-depth: "0"
           lfs: "./en"
       - uses: dfm/force-push-branch-action@v1
