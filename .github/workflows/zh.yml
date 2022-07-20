@@ -7,16 +7,25 @@ jobs:
   MakeSite:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           ref: "dev-zh"
           fetch-depth: "0"
-      - uses: actions/setup-python@v2
+      - name: Install Python
+        uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - run: pip install -r requirements.txt
-      - run: git clone https://github.com/Github-DVIA/FASTlearn.git presite && cd presite && git checkout gh-zh
-      - run: mkdocs build
-      - run: cd site && mkdir .github && cd .github && mkdir workflows
-      - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
-      - run: cd site && cp -rf ../presite/.git .git && git config --global user.email "huangyinhaow@outlook.com" && git config --global user.name "huangyinhaow" && git add . && git commit -m "Update" && git push origin gh-zh --force
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Build website
+        run: mkdocs build
+      - name: main.yml
+        run: |
+          cd site && mkdir .github && cd .github && mkdir workflows
+          cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site
+          branch: gh-zh
