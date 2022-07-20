@@ -1,0 +1,19 @@
+name: zh-Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Deploy docs to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v2
+      - name: Build
+        uses: Tiryoh/actions-mkdocs@v0
+        with:
+          mkdocs_version: 'latest' # option
+          requirements: 'requirements.txt' # option
+          configfile: 'mkdocs.yml' # option
+      - run: mkdocs gh-deploy --force -b zh

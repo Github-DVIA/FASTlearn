@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-
 {% block content %}
 {{ super() }}
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "838fa395e08742f1a3b141f9c1597a45"}'></script><!-- End Cloudflare Web Analytics -->
 {% set cusdis = config.extra.cusdis %}
 {% if page and page.meta and page.meta.cusdis is string %}
 {% set cusdis = page.meta.cusdis %}
@@ -9,6 +9,11 @@
 {% if not page.is_homepage %}
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
 <div class="cusdis" style="width:100%">
+    <style>
+        .cusdis .cusdis_thread {
+            font-family: "Noto Serif","Ubuntu", "Noto Serif SC", Arial;
+        }
+    </style>
     <div id="cusdis_thread" data-host="{{ config.extra.cusdis.host }}" data-app-id="{{ config.extra.cusdis.app_id }}"
         data-page-id="{{ page.title }}" data-page-url="{{ page.title }}" data-page-title="{{ page.title }}"
         >
