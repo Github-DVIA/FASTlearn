@@ -7,7 +7,7 @@ jobs:
   MakeSite:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout to dev-zh
         uses: actions/checkout@v3
         with:
           ref: "dev-zh"
@@ -22,8 +22,28 @@ jobs:
         run: mkdocs build
       - run: cd site && mkdir .github && cd .github && mkdir workflows
       - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
-      - name: Deploy 🚀
+      - name: Deploy to gh-zh
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: site
           branch: gh-zh
+          force: true
+      - name: Checkout to gh-zh
+        uses: actions/checkout@v3
+        with:
+          ref: "gh-zh"
+          fetch-depth: "0"
+      - name: Create Github Actions fs
+        run: mkdir .github && cd .github && mkdir workflows
+      - name: Get Github Actions file
+        working-directory: ./.github/workflows/
+        run: curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
+      - name: Commit change
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add Github Actions file" -a
+      - name: re-Deploy to gh-zh
+        uses: ad-m/github-push-action@master
+        with:
+          force_with_lease: true
