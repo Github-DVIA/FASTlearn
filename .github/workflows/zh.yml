@@ -4,7 +4,7 @@ on:
     branches:
       - dev-zh
 jobs:
-  deploy:
+  MakeSite:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,8 +18,4 @@ jobs:
       - run: mkdocs build
       - run: cd site && mkdir .github && cd .github && mkdir workflows
       - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
-      - uses: dfm/force-push-branch-action@v1
-        with:
-          target-branch: "gh-zh"
-          commit-message: "use dfm/force-push-branch-action@v1"
-          path: site/*
+      - run: git push origin `git subtree split --prefix site gh-zh`:gh-zh --force
