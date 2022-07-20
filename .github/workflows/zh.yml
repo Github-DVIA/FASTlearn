@@ -15,7 +15,9 @@ jobs:
         with:
           python-version: 3.7
       - run: pip install -r requirements.txt
+      - run: git git subtree add --prefix=pre-site https://github.com/Github-DVIA/FASTlearn.git gh-zh
       - run: mkdocs build
       - run: cd site && mkdir .github && cd .github && mkdir workflows
       - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
-      - run: cd site && git init && git remote add origin https://github.com/Github-DVIA/FASTlearn.git && git commit -a "all" && git add -A && git push -f origin gh-zh
+      - run: cp -rf site/ pre-site
+      - run: git subtree split --prefix=pre-site https://github.com/Github-DVIA/FASTlearn.git gh-zh
