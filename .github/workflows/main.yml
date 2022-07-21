@@ -12,13 +12,12 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: "gh-page"
-          lfs: "./page"
       - name: Delete old file
         run: rm -rf zh && rm -rf en
       - name: Clone gh-zh
-        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-zh --single-branch zh
+        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-zh --single-branch zh && rm -rf zh/.git
       - name: Clone gh-en
-        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-en --single-branch en
+        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-en --single-branch en && rm -rf en/.git
       - name: Get index.html
         run: curl -o index.html https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/src/index.html
       - name: Commit changes
@@ -30,4 +29,4 @@ jobs:
       - name: re-Deploy to gh-page
         uses: ad-m/github-push-action@master
         with:
-          force_with_lease: true
+          force: true
