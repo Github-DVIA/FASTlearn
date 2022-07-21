@@ -30,4 +30,4 @@ jobs:
           force: true
       - name: Call gh-page
         run: |
-          curl -X POST https://api.github.com/repos/shaowenchen/wait-webhook-to-run/dispatches -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token ${{ github.token }}" --data '{"event_type": "curl1"}'
+          curl -X POST https://api.github.com/repos/Github-DVIA/FASTlearn/dispatches -H "Accept: application/vnd.github.everest-preview+json" -H "Authorization: token ${{ github.token }}" --data '{"event_type": "curl1"}'
