@@ -21,13 +21,9 @@ jobs:
         run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-en --single-branch en
       - name: Get index.html
         run: curl -o index.html https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/src/index.html
-      - name: Commit changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          git commit -m "Add Github Actions file" -a
-      - name: re-Deploy to gh-page
-        uses: ad-m/github-push-action@master
+      - name: Deploy to gh-page
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          force_with_lease: true
+          folder: .
+          branch: gh-page
+          force: true
