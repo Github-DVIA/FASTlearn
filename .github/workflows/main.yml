@@ -1,9 +1,8 @@
 name: 2IN1
 on:
-  push:
-    branches:
-      - "dev-zh"
-      - "dev-en"
+  repository_dispatch:
+    types:
+      - curl1
 jobs:
   deploy:
     runs-on: ubuntu-latest
