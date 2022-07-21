@@ -2,15 +2,15 @@ name: gh-en
 on:
   push:
     branches:
-      - dev-en
+      - main-en
 jobs:
   MakeSite:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout to dev-en
+      - name: Checkout to main-en
         uses: actions/checkout@v3
         with:
-          ref: "dev-en"
+          ref: "main-en"
           fetch-depth: "0"
       - name: Install Python
         uses: actions/setup-python@v2
