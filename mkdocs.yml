@@ -79,6 +79,13 @@ extra:
     host: https://cus-fastlearn.xf-yun.cn
     app_id: 23b1a81c-8dc3-4240-bf28-97bb978454e1
     lang: zh-cn
+  alternate:
+    - name: 中文
+      link: /zh/
+      lang: zh
+    - name: English
+      link: /en/
+      lang: en
 extra_javascript:
   # load/javascripts/mermaid/mermaid-lad.js
   - load/javascripts/mermaid/mermaid.js
