@@ -2,16 +2,16 @@ name: gh-zh
 on:
   push:
     branches:
-      - dev-zh
+      - main-zh
 jobs:
   job1:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout to dev-zh
+      - name: Checkout to main-zh
         uses: actions/checkout@v3
         with:
-          ref: "dev-zh"
+          ref: "main-zh"
           fetch-depth: "0"
       - name: Install Python
         uses: actions/setup-python@v2
