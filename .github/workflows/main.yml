@@ -7,7 +7,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 2m
       - uses: actions/checkout@v3
         with:
           ref: "gh-page"
