@@ -4,15 +4,47 @@ on:
     branches:
       - dev-en
 jobs:
-  deploy:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout to dev-en
+        uses: actions/checkout@v3
+        with:
+          ref: "dev-en"
+          fetch-depth: "0"
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Build website
+        run: mkdocs build
+      - run: cd site && mkdir .github && cd .github && mkdir workflows
+      - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
+      - name: Deploy to gh-en
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site
+          branch: gh-en
+          force: true
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
-          ref: 'dev-en'
-          fetch-depth: '0'
-      - uses: actions/setup-python@v2
+          ref: "gh-page"
+      - name: Delete old file
+        run: rm -rf zh && rm -rf en
+      - name: Clone gh-zh
+        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-zh zh && rm -rf zh/.git
+      - name: Clone gh-en
+        run: git clone https://github.com/Github-DVIA/FASTlearn.git --branch gh-en en && rm -rf en/.git
+      - name: Get index.html
+        run: curl -o index.html https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/src/index.html
+      - name: Deploy to gh-page
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          python-version: 3.7
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force -b gh-en
+          folder: .
+          branch: gh-page
+          force: true
