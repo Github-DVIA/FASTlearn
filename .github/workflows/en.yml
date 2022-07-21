@@ -4,15 +4,27 @@ on:
     branches:
       - dev-en
 jobs:
-  deploy:
+  MakeSite:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout to dev-en
+        uses: actions/checkout@v3
         with:
-          ref: 'dev-en'
-          fetch-depth: '0'
-      - uses: actions/setup-python@v2
+          ref: "dev-en"
+          fetch-depth: "0"
+      - name: Install Python
+        uses: actions/setup-python@v2
         with:
           python-version: 3.7
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force -b gh-en
+      - name: Install requirements
+        run: pip install -r requirements.txt
+      - name: Build website
+        run: mkdocs build
+      - run: cd site && mkdir .github && cd .github && mkdir workflows
+      - run: cd site/.github/workflows/ && curl -o main.yml "https://raw.githubusercontent.com/Github-DVIA/FASTlearn/master/.github/workflows/main.yml" && ls -a
+      - name: Deploy to gh-en
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: site
+          branch: gh-en
+          force: true

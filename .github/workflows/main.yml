@@ -1,8 +1,9 @@
-name: 2IN1
+name: gh-page
 on:
-  repository_dispatch:
-    types:
-      - curl1
+  push:
+    branches:
+      - "gh-zh"
+      - "gh-en"
 jobs:
   deploy:
     runs-on: ubuntu-latest
