@@ -4,7 +4,8 @@ on:
     branches:
       - dev-en
 jobs:
-  Build:
+  job1:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout to dev-en
@@ -28,7 +29,9 @@ jobs:
           folder: site
           branch: gh-en
           force: true
-  Deploy:
+  job2:
+    name: Deploy
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
