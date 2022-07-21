@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var lang = navigator.language
+        console.log(lang)
+        if (lang !== "zh-CN") {
+            window.parent.location.replace("./en")
+        } 
+    </script>
+</body>
+
+</html>
