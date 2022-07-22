@@ -1,4 +1,5 @@
 mkdocs_with_pdf>=0.9.3
+
 mkdocs_pdf_export_plugin>=0.5.10
 jieba>=0.42.1
 mkdocs_material>=8.3.6
@@ -12,3 +13,6 @@ pygments>=2.12
 pymdown-extensions>=9.4
 mkdocs-blogging-plugin>=2.1
 mkdocs-git-revision-date-localized-plugin>=1.0.1
+mkdocs_awesome_pages_plugin>=2.7.0
+mkdocs-table-reader-plugin>=1.1.0
+mkdocs-minify-plugin>=0.5.0

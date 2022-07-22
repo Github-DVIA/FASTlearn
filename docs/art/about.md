@@ -5,7 +5,7 @@ hide:
   - footer
 ---
 
-# FASTlearn的哲学
+# 哲学
 
 FASTlearn的存在的意义在于它的设计哲学，这使得FASTlearn是那么的与众不同。
 
