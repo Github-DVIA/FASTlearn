@@ -14,8 +14,8 @@
 │                                               │
 │   master                                      │
 │                                               │
-│   dev-zh ──► main-zh ──► gh-zh ┌┐             │
-│                                │┤►gh-pagege   │
-│   dev-en ──► main-en ──► gh-en └┘             │
+│   dev-zh ──► main-zh ──► gh-zh ─┐             │
+│                                 ├─► gh-page   │
+│   dev-en ──► main-en ──► gh-en ─┘             │
 │                                               │
 └───────────────────────────────────────────────┘
