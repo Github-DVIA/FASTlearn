@@ -59,6 +59,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.critic
 theme:
   icon:
     repo: fontawesome/brands/github
