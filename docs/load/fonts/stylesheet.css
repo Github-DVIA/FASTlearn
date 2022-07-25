@@ -5,6 +5,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans SC';
     src: url('./NotoSansSC-Black.woff2') format('woff2');
@@ -12,6 +13,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans SC';
     src: url('./NotoSansSC-Medium.woff2') format('woff2');
@@ -19,6 +21,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans SC';
     src: url('./NotoSansSC-Regular.woff2') format('woff2');
@@ -26,6 +29,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Sans SC';
     src: url('./NotoSansSC-Bold.woff2') format('woff2');
@@ -44,6 +48,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Serif SC';
     src: url('./NotoSerifSC-Black.woff2') format('woff2');
@@ -51,6 +56,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Serif SC';
     src: url('./NotoSerifSC-Medium.woff2') format('woff2');
@@ -58,6 +64,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Serif SC';
     src: url('./NotoSerifSC-Regular.woff2') format('woff2');
@@ -65,6 +72,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Serif SC';
     src: url('./NotoSerifSC-Bold.woff2') format('woff2');
@@ -85,6 +93,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Serif';
     src: local('Noto Serif Bold'), local('NotoSerif-Bold'),
@@ -94,6 +103,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Serif';
     src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
@@ -103,6 +113,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Noto Serif';
     src: local('Noto Serif'), local('NotoSerif'),
@@ -125,6 +136,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'),
@@ -134,6 +146,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Italic'), local('Ubuntu-Italic'),
@@ -143,6 +156,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Light'), local('Ubuntu-Light'),
@@ -152,6 +166,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
@@ -161,6 +176,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'),
@@ -170,6 +186,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'),
@@ -179,6 +196,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
@@ -201,6 +219,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu Mono';
     src: local('Ubuntu Mono'), local('UbuntuMono-Regular'),
@@ -210,6 +229,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu Mono';
     src: local('Ubuntu Mono Bold Italic'), local('UbuntuMono-BoldItalic'),
@@ -219,6 +239,7 @@
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Ubuntu Mono';
     src: local('Ubuntu Mono Bold'), local('UbuntuMono-Bold'),
@@ -233,22 +254,15 @@
 
 
 :root {
-  --md-text-font: "Noto Serif","Ubuntu", "Noto Serif SC", Arial; 
-  --md-code-font: "Ubuntu Mono", monospace; 
+    --md-text-font: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+    --md-code-font: "Ubuntu Mono", monospace;
 }
 
-.md-ellipsis {
-    font-family: "Ubuntu", Arial;
-}
-
-.md-nav__title {
-    font-family: "Ubuntu", Arial;
-}
-
-.md-source__repository {
-    font-family: "Ubuntu", Arial;
-}
-
-.md-footer {
-    font-family: "Ubuntu", Arial;
+.md-ellipsis,
+.md-source__repository,
+.md-source__repository--active,
+.md-nav__title,
+.md-footer,
+.md-select__link {
+    font-family: "Ubuntu", Arial, Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;;
 }

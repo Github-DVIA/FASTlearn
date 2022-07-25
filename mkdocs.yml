@@ -1,6 +1,18 @@
 site_name: FASTlearn
 plugins:
   # mermaid2
+  - awesome-pages
+  - table-reader
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      js_files:
+        - load/javascripts/mermaid/mermaid.js
+      css_files:
+        - load/fonts/stylesheet.css
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
@@ -13,37 +25,41 @@ plugins:
         - ja
       separator: '[\s\u200b\-]'
 markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - footnotes
-  - md_in_html
-  - abbr
-  - toc:
-      permalink: true
-      slugify: !!python/name:pymdownx.slugs.uslugify
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-      clickable_checkbox: true
-  - pymdownx.smartsymbols
-  - pymdownx.details
-  - pymdownx.caret
-  - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.betterem
-  - pymdownx.arithmatex:
-      generic: true
-  - admonition
-  # extra
-  - tables
-  - smarty
-  - meta
+  - pymdownx.critic
 theme:
   icon:
     repo: fontawesome/brands/github
@@ -166,6 +182,10 @@ nav:
               - art/phy/3.3/3.3.1.md
               - art/phy/3.3/3.3.2.md
               - art/phy/3.3/3.3.3.md
+          - 闭合电路:
+              - art/phy/3.4/index.md
+              - art/phy/3.4/3.4.1.md
+              - art/phy/3.4/3.4.2.md
       - 选择性必修一:
           - "动量守恒定律":
               - art/phy/4.1/index.md
